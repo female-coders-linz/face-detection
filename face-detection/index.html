@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Face detection</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Face detection</h1>
+        <div class="content">
+            <div class="img-wrapper">
+                <img id="image" src="dummy-image.jpg">
+            </div>
+            <textarea id="textarea">Result: </textarea>
+        </div>
+        <div class="upload">
+            <input id="file" class="file" name="file" type='file' accept='image/*' onchange='processImage(this)'>
+            <label for="file">Browse and choose a file</label>
+        </div>
+    </div>
+    <div class="loading-spinner hidden">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
